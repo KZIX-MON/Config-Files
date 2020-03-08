@@ -2,7 +2,6 @@
 
 #This program is supposed to Auto Install the programs and Dotfiles that I need
 
-pacman -S --noconfirm git
 pacman -S --noconfirm i3
 pacman -S --noconfirm zsh
 pacman -S --noconfirm nvim
