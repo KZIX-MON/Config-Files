@@ -42,3 +42,8 @@ yay -S brave-bin
 chsh -s zsh $USER
 
 echo "#!bin/sh\nexec i3\n" > .xinitrc
+
+mkdir -p ~/.config/nvim
+mkdir -p ~/.config/picom
+mkdir -p ~/.config/neofetch
+mkdir -p ~/.config/i3blocks
