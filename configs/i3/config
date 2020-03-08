@@ -208,5 +208,5 @@ gaps inner 15
 gaps outer 15
 
 #Autostart Programs
-exec feh --bg-fill ~/pics/frankfurt.jpeg
-exec_always picom
+#exec feh --bg-fill ~/pics/frankfurt.jpeg
+#exec_always picom
