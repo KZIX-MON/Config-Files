@@ -39,7 +39,7 @@ mount /dev/sdb3 /mnt/home
 mkdir -p /mnt/boot
 mount /dev/sdb /mnt/boot
 
-pacstrap /mnt base base-devel linux linux-firmware
+pacstrap /mnt base base-devel linux linux-firmware git
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
