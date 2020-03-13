@@ -6,6 +6,10 @@
 sudo pacman -Syu --noconfirm
 
 #Installs all needed programs
+sudo pacman -S --noconfirm xorg
+sudo pacman -S --noconfirm xorg-server
+sudo pacman -S --noconfirm xorg-xinit
+sudo pacman -S --noconfirm feh
 sudo pacman -S --noconfirm i3 
 sudo pacman -S --noconfirm zsh
 sudo pacman -S --noconfirm neovim
