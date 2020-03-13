@@ -1,5 +1,4 @@
 #!/bin/sh
-
 #This program is supposed to Auto Install the programs and Dotfiles that I need
 
 #Updates Pacman
@@ -52,12 +51,13 @@ mkdir -p ~/pics
 mv ~/Config-Files/frankfurt.jpeg ~/pics || echo "Not Found..."
 mv ~/Config-Files/tech.jpeg ~/pics || echo "Not Found..."
 
-
+#Moves Configs into place
 mv ~/Config-Files/configs/zsh/.zshrc ~ || echo "Not moved"
 mv ~/Config-Files/configs/i3/config ~/.config/i3 || echo "Not moved"
 mv ~/Config-Files/configs/i3blocks/config ~/.config/i3blocks || echo "Not moved"
 mv ~/Config-Files/configs/picom ~/.config/picom || echo "Not moved"
 mv ~/Config-Files/configs/neofetch ~/.config/neofetch || echo "Not moved"
+mv ~/Config-Files/configs/nvim/init.vim ~/.config/nvim/
 
 #Installs Suckless Programs
 cd ~/.git
