@@ -33,10 +33,14 @@ yay -S --noconfirm aic94xx-firmware
 yay -S --noconfirm picom-git
 yay -S --noconfirm brave-bin
 
+#Changes Shell to Zsh
 chsh -s /bin/zsh $USER
 
-echo "#!bin/sh\nexec i3\n" > .xinitrc
+#Makes i3 executable
+echo "#!bin/sh" >> .xinitrc
+ehco "exec i3" >> .xinitrc
 
+#Makes Config directories
 mkdir -p ~/.config/nvim
 mkdir -p ~/.config/picom
 mkdir -p ~/.config/neofetch
@@ -44,8 +48,8 @@ mkdir -p ~/.config/i3blocks
 mkdir -p ~/.config/i3
 mkdir -p ~/pics 
 
+#Moves the Wallpapers
 mv ~/Config-Files/frankfurt.jpeg ~/pics || echo "Not Found..."
-
 mv ~/Config-Files/tech.jpeg ~/pics || echo "Not Found..."
 
 
