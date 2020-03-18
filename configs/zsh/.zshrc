@@ -37,10 +37,10 @@ alias n='nvim'
 alias nrc='nvim ~/.config/nvim/init.vim'
 alias zrc='nvim ~/.zshrc'
 alias i3rc='nvim ~/.config/i3/config'
-
+alias c='clear'
 ##Power Management
 alias off='systemctl poweroff'
 alias boot='systemctl reboot'
-
+alias lock='i3lock -c 000000'
 #Run at start?
-source /home/jason/.git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
