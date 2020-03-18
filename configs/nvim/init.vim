@@ -1,6 +1,6 @@
 " Plugins
 call plug#begin(stdpath('data') . '/plugged')
-Plug 'chriskempson/base16-vim'
+" Fill in with the theme you desire
 call plug#end()
 
 " Basics :
@@ -27,4 +27,4 @@ call plug#end()
 	map <C-k> <C-w>k
 	map <C-l> <C-w>l
 " Theme :
-	let base16colorspace=256
+" Fill in with the theme you desire
