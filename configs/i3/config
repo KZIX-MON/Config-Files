@@ -79,7 +79,7 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+semicolon split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+Shift+semicolon split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -173,10 +173,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #Applications
-bindsym $mod+Shift+b exec brave
-bindsym $mod+Shift+v exec vlc
-bindsym $mod+Shift+z exec zathura
-bindsym $mod+Print exec flameshot gui
+bindsym $mod+b exec brave
+bindsym $mod+z exec zathura
 #Window Size
 new_window none
 
@@ -184,7 +182,7 @@ new_window none
 # finds out, if available)
 bar {
 	position top
-
+	
         colors {
 #		<basic>		<color>
 		background 	#222222
@@ -204,9 +202,29 @@ bar {
 	
 }
 
+
+#i3-Gaps Binginds:
+bindsym $mod+t	gaps inner current set 0; gaps outer current set 0
+
+bindsym $mod+Shift+t	gaps inner current set 15; gaps outer current set 15
+
+bindsym $mod+p		gaps inner current minus 5
+
+bindsym $mod+Shift+p	gaps inner current plus 5
+
+bindsym $mod+o		gaps outer current minus 5
+
+bindsym $mod+Shift+o	gaps outer current plus 5
+
+#Picom Toggle
+bindsym $mod+u		exec picom --config ~/.config/picom/picom.conf
+
+bindsym $mod+Shift+u	exec killall -q picom
+
+#i3-Gaps Settings:
 gaps inner 15
+
 gaps outer 15
 
 #Autostart Programs
-#exec feh --bg-fill ~/pics/frankfurt.jpeg
-#exec_always picom
+exec feh --bg-fill ~/pics/frankfurt.jpeg
